@@ -64,10 +64,11 @@ body {
     color: white;
     padding: 40px 0;
     width: 100vw;
+    background-image: url("../assets/Rectangle\ 37.png");
 }
 
 .intro-content {
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .intro-section h1 {
