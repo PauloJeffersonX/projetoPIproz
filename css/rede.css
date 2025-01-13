@@ -15,9 +15,9 @@ section {
     background-image: url(./assets/Conectividade.png);
     background-size: cover;
     background-position: center;
-    padding: 10px 0;
+    padding: 5px 0;
     text-align: left;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .hero-section h2 {
@@ -31,7 +31,7 @@ section {
 .hero-section-inner {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 .content-section {
@@ -88,6 +88,6 @@ section {
 
 .blue-bg {
     background-color: #21005D;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 

@@ -1,47 +1,39 @@
-
 // Rolagem suave para âncoras de navegação
 document.querySelectorAll('.navbar a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href').substring(1);
-      document.getElementById(targetId).scrollIntoView({
-          behavior: 'smooth'
-      });
-  });
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+
+        // Verifica se o href é um link interno (começa com '#')
+        if (href.startsWith('#')) {
+            const targetId = href.substring(1);
+
+            // Verificação se o elemento alvo existe antes de tentar scrollIntoView
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        } else {
+            // Se não é um link interno, redireciona para a URL especificada no href
+            window.location.href = href;
+        }
+    });
 });
 
 // Animação de entrada para elementos
 const fadeElements = document.querySelectorAll('.fade-in');
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-      if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-      }
-  });
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target); // Para de observar o elemento após a animação
+        }
+    });
 }, { threshold: 0.1 });
 
 fadeElements.forEach(el => observer.observe(el));
-
-// Validação simplificada do formulário de contato
-document.querySelector('.contact-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    let valid = true;
-    const inputs = this.querySelectorAll('input, textarea');
-    inputs.forEach(input => {
-        if (!input.value.trim()) {
-            input.style.border = '2px solid red';
-            valid = false;
-        } else {
-            input.style.border = '1px solid #ddd';
-        }
-    });
-    if (valid) {
-        alert('Sua mensagem foi enviada com sucesso!');
-        this.reset();
-    } else {
-        alert('Por favor, preencha todos os campos obrigatórios.');
-    }
-});
 
 // Função para exibir mensagem de feedback na seção de contato
 function showFeedback(message, type) {
