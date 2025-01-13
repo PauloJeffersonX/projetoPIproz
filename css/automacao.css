@@ -1,0 +1,120 @@
+@import url(style.css);
+/* Reset CSS */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero {
+   background-color: #5f1ff5;
+    padding: 20px 0;
+    
+}
+.hero-content {
+    width: 60%;
+    color: rgb(255, 255, 255);
+    
+}
+
+.contact-info {
+    padding:40px 0;
+    background-color: #5f1ff5;  
+    
+}
+
+.hero-content h2 {
+     font-size: 2em;
+     margin-bottom: 10px;
+}
+
+.hero-content p {
+      font-size: 1.1em;
+}
+.hero-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+.hero-content ul li {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.hero-content a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.button-style{
+   background-color: #111155;
+   color: white;
+   font-size: 1.1em;
+   padding: 15px 30px;
+   border: none;
+   border-radius: 4px;
+    cursor: pointer;
+   margin-bottom: 20px;
+}
+.hero .container {
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.hero-img {
+    width: 55%;
+    height: 400px;
+    background-color: #222;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solutions {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 50px 0;
+}
+.solutions h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.solutions p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+.solution-cards {
+    display: flex;
+    justify-content: space-around;
+}
+.solution-card {
+    width: 30%;
+    text-align: center;
+    
+}
+
+.solution-card p {
+     text-align: center;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.img-container-small {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden;/
+}

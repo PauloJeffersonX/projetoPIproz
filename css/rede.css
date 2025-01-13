@@ -1,0 +1,93 @@
+@import url(./style.css);
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.hero-section {
+    background-image: url(./assets/Conectividade.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 0;
+    text-align: left;
+    color: white;
+}
+
+.hero-section h2 {
+    font-size: 2.5em;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+}
+
+.hero-section-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.content-section .text-content {
+    max-width: 550px;
+}
+
+.content-section .image-content {
+    max-width: 550px;
+}
+
+.content-section img,
+.content-section video {
+    max-width: 100%;
+    border-radius: 5px;
+    max-height: 320px;
+    object-fit: cover;
+}
+
+
+.content-section h2 {
+    font-size: 2em;
+}
+
+.content-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #663399;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #21005D;
+}
+
+
+.blue-bg {
+    background-color: #21005D;
+    color: white;
+}
+
