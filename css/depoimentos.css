@@ -1,0 +1,174 @@
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:20px;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: #e6b800;
+    padding: 15px 0 ;
+    margin-bottom: 20px;
+    background-image: url(/assets/fundo-depoimento.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.depoimento{
+    width: 60%;
+    display: flex;
+    box-shadow: 0 0 15px #2d006f;
+    background-color: #f5f4f4;
+    border-radius: 20px;
+    padding: 5px;
+    background-image: url(../assets/fundo-depoimento.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.depoimento:hover{
+    transform: scale(1.1, 1.1);
+    transition: .3s ease-in-out;
+}
+
+.customer, .marks{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.quot{
+    text-align: justify;
+    padding: 0 20px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.fa-quote-left, .fa-star{
+    color: #e6b800;
+}
+blockquote{
+
+    line-height: 25px;
+    color: #fff;
+}
+
+.marks{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.name{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #e6b800;
+}
+.job{
+    font-weight: lighter;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+strong{
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 950px) and (max-width:1023px){
+    section{
+        height: calc(100vh - 180px);
+    }
+    .depoimento{
+        margin-bottom: 20px;
+        width: 600px;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:949px){
+    .depoimento{
+        margin-bottom: 20px;
+        width: 600px;
+    }
+    section{
+        height: calc(100vh - 230px);
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width:699px){
+    h1{
+        padding: 50px 0px 20px 0px;
+    }
+    .depoimento{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        
+    }
+    .job{
+        display: block;
+    }
+    .name, .job{
+        text-align: center;
+        padding: 10px 0px ;
+    }
+
+    .customer, .marks{
+        width: 150px;
+        height: 150px;
+    }
+    
+    blockquote{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1024px){
+    section{
+        height: calc(100vh - 197px);
+    } 
+}
+
+@media screen and (width: 1024px) and (height:1366px){
+    section{
+        height: calc(100vh - 320px);
+    } 
+    .depoimento{
+        width: 600px;
+    } 
+}
+
+@media screen and (width: 1024px) and (height:600px){
+    .depoimento{
+        margin-bottom: 20px;
+        width: 600px;
+    }
+    section{
+        height: calc(100vh - 150px);
+    }  
+}
+
+@media screen and (max-width: 430px){
+    .main-header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        padding: 10px 0px; 
+    }
+    .navbar{
+        margin: 0;
+    }
+}
+
+.image{
+    width: 100px;
+    height: 300px;
+}
