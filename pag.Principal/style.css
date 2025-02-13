@@ -181,7 +181,7 @@ body {
     text-align: center;
 }
 
-.areas-atuacao-section h2 {
+.areas-ataman-section h2 {
     font-size: 1.8em;
     margin-bottom: 20px;
 }
@@ -301,6 +301,23 @@ textarea {
     border-radius: 5px;
     font-size: 1em;
     background-color: #e2e8f0;
+}
+.span-requerend{
+    display: none;
+    font-size: 14px;
+    padding: 1px;
+    color: rgb(189, 25, 4);
+    width: 50%;
+}
+
+.span-requerendsob{
+    display: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 1px;
+    color: red;
+    width: 50%;
+    text-align:left;
 }
 
 textarea {
