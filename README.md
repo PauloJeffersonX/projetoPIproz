@@ -46,7 +46,7 @@ O TechHelp utiliza tecnologias modernas para oferecer a melhor experiência aos 
 
 1. Clone este repositório:
    ```bash
-   [git clone https://github.com/seu-usuario/techhelp.git](https://github.com/PauloJeffersonX/projetoPIproz.git)
+   git clone https://github.com/seu-usuario/techhelp.git
    ```
 2. Navegue até o diretório do projeto:
    ```bash
@@ -66,5 +66,3 @@ Entre em contato com o **TechHelp**:
 ---
 
 > Desenvolvido por **TechHelp - Seu suporte técnico de confiança**.
-# projeto-ti
-# projeto-ti
